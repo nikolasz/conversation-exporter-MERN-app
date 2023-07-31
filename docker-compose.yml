@@ -1,0 +1,20 @@
+version: '3'
+services:
+  server:
+    build: ./server
+    ports:
+      - 5000:5000
+    volumes:
+      - ./server:/usr/src/app
+    depends_on:
+      - mongodb
+  client:
+    build: ./client
+    ports:
+      - 3000:3000
+    volumes:
+      - ./client:/usr/src/app
+  mongodb:
+    image: mongo
+    ports:
+      - 27017:27017
