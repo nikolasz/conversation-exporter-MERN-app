@@ -11,7 +11,7 @@ File Upload Module: Users should be able to upload their conversations.json file
 
 Data Processing and Visualization Module: This module will parse the uploaded JSON file, process the data, and provide various visualization options. Visualizations could include things like a UI for reading and interacting with the conversations, a word cloud of the most common words, or a graph of the most common topics. Various descriptive statistics, etc. # TODO flesh out this module more
 
-Conversation Viewer Module: This module will allow users to browse their conversations in an easy-to-read format. This could also include features like highlighting searched-for words or phrases, or tagging identified entities or topics.
+Conversation Viewer Module: This module will allow users to browse their conversations in an easy-to-read format. This could also include features like highlighting searchedpwd-for words or phrases, or tagging identified entities or topics.
 
 
 Conversation Analysis Module: This module will provide more in-depth analysis of the conversations. Features might include topic modeling to identify common themes, named entity recognition to identify people, places, and organizations mentioned, or even a machine learning model to predict the sentiment or emotional tone of a conversation. #TODO develop more use cases for extracting value from the conversations
@@ -32,7 +32,7 @@ Client-side: A React.js application created using Create React App. The applicat
 Database: MongoDB as the NoSQL database. Mongoose will be used for handling database migrations.
 The entire application will be containerized using Docker, and Docker Compose will be used to manage the different Docker containers for the application.
 
-3. System Configuration and Dependencies
+3. System Configuration and Dependencie
 The system requires the following dependencies and configuration:
 
 Node.js and npm: The Node.js runtime and npm package manager are required for running the server-side application and managing its dependencies.
