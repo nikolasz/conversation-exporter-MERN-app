@@ -9,7 +9,7 @@ services:
     depends_on:
       - mongodb
   client:
-    build: ./client
+    build: ./server
     ports:
       - 3000:3000
     volumes:
