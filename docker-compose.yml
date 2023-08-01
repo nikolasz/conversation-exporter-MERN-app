@@ -6,15 +6,23 @@ services:
       - 5000:5000
     volumes:
       - ./server:/usr/src/app
+      - server_node_modules:/usr/src/app/node_modules
     depends_on:
       - mongodb
+
   client:
-    build: ./server
+    build: ./client
     ports:
       - 3000:3000
     volumes:
       - ./client:/usr/src/app
+      - client_node_modules:/usr/src/app/node_modules
+
   mongodb:
     image: mongo
     ports:
       - 27017:27017
+
+volumes:
+  server_node_modules:
+  client_node_modules:
